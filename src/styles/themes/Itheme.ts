@@ -6,6 +6,7 @@ export interface ITheme {
         gray: string;
         orangePrimary: string;
         orangeSecondary: string;
+        white: string;
     };
     fonts: {
         montserrat: string,

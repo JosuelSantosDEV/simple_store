@@ -7,7 +7,8 @@ export const lightTheme: ITheme = {
         blueLight: "#038bbb",
         gray: "#a2a9af",
         orangePrimary: "#e19f41",
-        orangeSecondary: "#fccb6f"
+        orangeSecondary: "#fccb6f",
+        white: "#fff"
     },
     fonts: {
         montserrat: "MontserratLight",

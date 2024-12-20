@@ -1,0 +1,224 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Eletrônicos",
+        "products": [
+          {
+            "id": 101,
+            "name": "Smartphone X",
+            "price": 2999.99,
+            "description": "Smartphone com 128GB de armazenamento e câmera de alta resolução.",
+            "image": "/imgProducts/eletronics/computer.png"
+          },
+          {
+            "id": 102,
+            "name": "Notebook Ultra",
+            "price": 5499.99,
+            "description": "Notebook com processador i7, 16GB RAM e SSD de 512GB.",
+            "image": "/imgProducts/eletronics/computer2.png"
+          },
+          {
+            "id": 103,
+            "name": "Fone Bluetooth Pro",
+            "price": 799.90,
+            "description": "Fones de ouvido sem fio com cancelamento de ruído.",
+            "image": "/imgProducts/eletronics/computer3.png"
+          },
+          {
+            "id": 104,
+            "name": "Smart TV 55\" 4K",
+            "price": 3999.99,
+            "description": "Televisão 4K Ultra HD com sistema Smart integrado.",
+            "image": "/imgProducts/eletronics/phone.png"
+          },
+          {
+            "id": 105,
+            "name": "Caixa de Som Portátil",
+            "price": 299.99,
+            "description": "Caixa de som Bluetooth resistente à água e bateria de longa duração.",
+            "image": "/imgProducts/eletronics/computer2.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Moda",
+        "products": [
+          {
+            "id": 201,
+            "name": "Camisa Polo",
+            "price": 149.99,
+            "description": "Camisa polo confortável, disponível em diversas cores.",
+            "image": "/imgProducts/fashion/fashion1.png"
+          },
+          {
+            "id": 202,
+            "name": "Tênis Esportivo",
+            "price": 399.90,
+            "description": "Tênis ideal para corrida com amortecimento avançado.",
+            "image": "/imgProducts/fashion/fashion2.png"
+          },
+          {
+            "id": 203,
+            "name": "Relógio Clássico",
+            "price": 999.99,
+            "description": "Relógio analógico clássico, resistente à água.",
+            "image": "/imgProducts/fashion/fashion3.png"
+          },
+          {
+            "id": 204,
+            "name": "Jaqueta Jeans",
+            "price": 249.99,
+            "description": "Jaqueta jeans estilosa e resistente.",
+            "image": "/imgProducts/fashion/fashion1.png"
+          },
+          {
+            "id": 205,
+            "name": "Óculos de Sol",
+            "price": 199.99,
+            "description": "Óculos de sol com proteção UV.",
+            "image": "/imgProducts/fashion/fashion2.png"
+          },
+          {
+            "id": 206,
+            "name": "Bolsa Feminina",
+            "price": 349.99,
+            "description": "Bolsa de couro sintético com acabamento premium.",
+            "image": "/imgProducts/fashion/fashion3.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Alimentos",
+        "products": [
+          {
+            "id": 301,
+            "name": "Chocolate Premium 70%",
+            "price": 19.99,
+            "description": "Barra de chocolate com 70% cacau.",
+            "image": "/imgProducts/foods/food1.png"
+          },
+          {
+            "id": 302,
+            "name": "Café Gourmet 500g",
+            "price": 49.99,
+            "description": "Café em grãos selecionados para um sabor encorpado.",
+            "image": "/imgProducts/foods/food2.png"
+          },
+          {
+            "id": 303,
+            "name": "Azeite Extra Virgem 1L",
+            "price": 69.99,
+            "description": "Azeite de oliva extra virgem de alta qualidade.",
+            "image": "/imgProducts/foods/food3.png"
+          },
+          {
+            "id": 304,
+            "name": "Vinho Tinto Seco",
+            "price": 89.99,
+            "description": "Vinho tinto seco com notas de frutas vermelhas.",
+            "image": "/imgProducts/foods/food1.png"
+          },
+          {
+            "id": 305,
+            "name": "Queijo Parmesão 500g",
+            "price": 39.99,
+            "description": "Queijo parmesão curado, ideal para massas.",
+            "image": "/imgProducts/foods/food2.png"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Livros",
+        "products": [
+          {
+            "id": 401,
+            "name": "Aprendendo JavaScript",
+            "price": 89.90,
+            "description": "Guia completo para iniciantes em JavaScript.",
+            "image": "/imgProducts/books/book1.png"
+          },
+          {
+            "id": 402,
+            "name": "O Poder do Hábito",
+            "price": 59.99,
+            "description": "Livro sobre como os hábitos moldam a vida cotidiana.",
+            "image": "/imgProducts/books/book2.png"
+          },
+          {
+            "id": 403,
+            "name": "Clean Code",
+            "price": 119.99,
+            "description": "Manual para escrever código limpo e eficiente.",
+            "image": "/imgProducts/books/book3.png"
+          },
+          {
+            "id": 404,
+            "name": "1984",
+            "price": 39.99,
+            "description": "Romance clássico de George Orwell sobre uma sociedade distópica.",
+            "image": "/imgProducts/books/book1.png"
+          },
+          {
+            "id": 405,
+            "name": "A Revolução dos Bichos",
+            "price": 34.99,
+            "description": "Fábula política escrita por George Orwell.",
+            "image": "/imgProducts/books/book2.png"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Esportes",
+        "products": [
+          {
+            "id": 501,
+            "name": "Bicicleta Mountain Bike",
+            "price": 2499.99,
+            "description": "Bicicleta para trilhas e terrenos acidentados.",
+            "image": "/imgProducts/sports/sport1.png"
+          },
+          {
+            "id": 502,
+            "name": "Bola de Futebol Oficial",
+            "price": 199.99,
+            "description": "Bola de futebol com padrão FIFA.",
+            "image": "/imgProducts/sports/sport2.png"
+          },
+          {
+            "id": 503,
+            "name": "Luvas de Boxe",
+            "price": 149.99,
+            "description": "Luvas acolchoadas para treino e combate.",
+            "image": "/imgProducts/sports/sport3.png"
+          },
+          {
+            "id": 504,
+            "name": "Raquete de Tênis Profissional",
+            "price": 699.90,
+            "description": "Raquete leve e resistente para competições.",
+            "image": "/imgProducts/sports/sport1.png"
+          },
+          {
+            "id": 505,
+            "name": "Kit de Pesca Completo",
+            "price": 499.99,
+            "description": "Kit completo com varas, anzóis e molinete.",
+            "image": "/imgProducts/sports/sport2.png"
+          },
+          {
+            "id": 506,
+            "name": "Prancha de Surf",
+            "price": 999.99,
+            "description": "Prancha leve e resistente para surfistas iniciantes e avançados.",
+            "image": "/imgProducts/sports/sport3.png"
+          }
+        ]
+      }
+    ]
+  }
+  
