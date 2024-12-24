@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaShoppingCart } from "react-icons/fa";
 
 type CartProps = {
-    isCartSideBarOpen: boolean;
+    isCartSideBarOpen?: boolean;
 }
 
 export const HomeContent = styled.div`

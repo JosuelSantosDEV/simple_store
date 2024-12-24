@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 interface IProps extends IconProps{
     children: React.ReactNode;
-    onClickAction?: (value?:unknown)=> void;
+    onClickAction?: (value?: unknown )=> unknown;
 }
 
 type IconProps = {

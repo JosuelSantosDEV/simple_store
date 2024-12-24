@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Logo from "../../components/Logo";
 import { useNavigate } from "react-router-dom";
+import Main from "../../components/Main";
 
 const Cart: React.FC = ()=>{
     const navigate = useNavigate();
@@ -10,9 +11,14 @@ const Cart: React.FC = ()=>{
         navigate("/");
     };
     return (
-        <Header>
-            <Logo onClickAction={handleNavigateToHomePage}/>
-        </Header>
+        <>
+            <Header>
+                <Logo onClickAction={handleNavigateToHomePage}/>
+            </Header>
+            <Main>
+                <></>
+            </Main>
+        </>
     )
 }
 

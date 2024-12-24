@@ -9,19 +9,18 @@ export const CartSideBarContent = styled.aside`
     width: 300px;
 
     display: flex;
+    flex-direction: column; 
     align-items: center;
-    flex-direction: column;
+    gap: 10px;
 
     background-color: ${p => p.theme.colors.blueLight};
 
     > span {
-
         position: absolute;
         top: 5px;
         left: 5px;
 
         background-color: ${p => p.theme.colors.darkSecondary};
-        
         height: 50px;
         width: 50px;
         border-radius: 50%;
@@ -31,20 +30,35 @@ export const CartSideBarContent = styled.aside`
         justify-content: center;
     }
 
-    div:nth-of-type(1){
+    > div:nth-of-type(1) {
         width: 100%;
         height: 60px;
-        margin-bottom: 10px;
 
         display: flex;
         align-items: center;
         justify-content: center;
-    
+
         color: ${p => p.theme.colors.darkPrimary};
-        background-color:  ${p => p.theme.colors.orangeSecondary};
-    }       
-    
+        background-color: ${p => p.theme.colors.orangeSecondary};
+    }
 `;
+
+
+export const ProductCartBox = styled.div`
+    width: 100%;
+
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow-y: auto; 
+    max-height: calc(100% - 220px); 
+
+`;
+
 
 export const InfoCartBox = styled.div`
     width: 90%;

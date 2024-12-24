@@ -7,6 +7,8 @@ import Logo from "../../components/Logo";
 import Main from "../../components/Main";
 import Footer from "../../components/Footer";
 import CartSideBar from "../../components/CartSideBar";
+import { MainContent } from "../../components/Main/styles";
+import ProductSection from "../../components/ProductSection";
 
 const Home: React.FC = ()=>{
     const navigate = useNavigate();
@@ -36,7 +38,9 @@ const Home: React.FC = ()=>{
                 <Cart onClick={handleOpenCartSideBar} onMouseEnter={handleOpenCartSideBar} isCartSideBarOpen={carSideBar} />
                 {carSideBar && <CartSideBar onClickCloseButton={handleCloseCartSideBar} onClickSideBarButton={handleNavigateToCartPage} />}
             </Header>
-            <Main/>
+            <Main>
+                <ProductSection/>
+            </Main>
             <Footer/>
         </HomeContent>
     )

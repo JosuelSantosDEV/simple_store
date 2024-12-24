@@ -1,22 +1,15 @@
-import React, { useState } from "react";
-import { MainContent, BoxContent } from "./styles";
-import CategoryBox from "../CategoryBox";
+import React from "react";
+import { MainContent} from "./styles";
 
-import data from "../../data/data.json";
+type Props = {
+    children : React.ReactNode
+}
 
-const Main: React.FC = ()=>{
-
-    const [dataState, setDataState] = useState(data.categories);
+const Main: React.FC<Props> = ({children})=>{
 
     return (
         <MainContent>
-            <BoxContent>
-                {
-                    dataState.map(category => {
-                        return <CategoryBox key={category.id} categoryName={category.name} product={category.products}></CategoryBox>
-                    })
-                }
-            </BoxContent>
+            {children}
         </MainContent>
     )
 }
