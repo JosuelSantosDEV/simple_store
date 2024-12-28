@@ -1,26 +1,31 @@
 import React, { useState } from "react";
 import { InputContent } from "./styles";
+import { useAppDispatch } from "../../store";
+import { setQuery } from "../../store/reducers/search";
 
 type CustomInputProps = {
     buttonTitle: string;
     placeholderInput: string;
     typeInput?: string;
-    onClickButton: (value: string)=> void;
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
     buttonTitle,
     placeholderInput,
     typeInput = "text",
-    onClickButton
 })=>{
 
     const [valueInput, setValueInput] = useState("");
+    const dispatch = useAppDispatch();
+
+    const onSearchInput = () => {
+        dispatch(setQuery(valueInput));
+    }
 
     return (
        <InputContent>
             <input value={valueInput} onChange={e => setValueInput(e.target.value)} placeholder={placeholderInput} type={typeInput} />
-            <button onClick={() => onClickButton(valueInput)}>{buttonTitle}</button>
+            <button onClick={onSearchInput}>{buttonTitle}</button>
        </InputContent>
     )
 }

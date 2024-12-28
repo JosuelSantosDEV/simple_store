@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Cart, HomeContent } from "./styles";
 import Header from "../../components/Header";
 import { useNavigate } from "react-router-dom";
@@ -7,43 +7,51 @@ import Logo from "../../components/Logo";
 import Main from "../../components/Main";
 import Footer from "../../components/Footer";
 import CartSideBar from "../../components/CartSideBar";
-import { MainContent } from "../../components/Main/styles";
 import ProductSection from "../../components/ProductSection";
 
-const Home: React.FC = ()=>{
+const Home: React.FC = () => {
     const navigate = useNavigate();
-
     const [carSideBar, setCarSideBar] = useState(false);
 
-    const handleCloseCartSideBar = () => {
+    const handleCloseCartSideBar = useCallback(() => {
         setCarSideBar(false);
-    }
-    const handleOpenCartSideBar = () => {
+    }, []);
+
+    const handleOpenCartSideBar = useCallback(() => {
         setCarSideBar(true);
-    }
-    
-    const handleNavigateToCartPage = ()=>{
+    }, []);
+
+    const handleNavigateToCartPage = useCallback(() => {
         navigate("/cart");
-    };
+    }, [navigate]);
+
     return (
         <HomeContent>
             <Header>
-                <Logo/>
-                <CustomInput 
-                    buttonTitle="Search" 
-                    onClickButton={(value: string)=> console.log(value)}
+                <Logo />
+                <CustomInput
+                    buttonTitle="Search"
                     placeholderInput="Informe algo"
-
                 />
-                <Cart onClick={handleOpenCartSideBar} onMouseEnter={handleOpenCartSideBar} isCartSideBarOpen={carSideBar} />
-                {carSideBar && <CartSideBar onClickCloseButton={handleCloseCartSideBar} onClickSideBarButton={handleNavigateToCartPage} />}
+                <Cart 
+                    onClick={handleOpenCartSideBar} 
+                    onMouseEnter={handleOpenCartSideBar} 
+                    isCartSideBarOpen={carSideBar} 
+                />
+                {carSideBar && (
+                    <CartSideBar 
+                        onClickCloseButton={handleCloseCartSideBar} 
+                        onClickSideBarButton={handleNavigateToCartPage}
+                         
+                    />
+                )}
             </Header>
             <Main>
-                <ProductSection/>
+                <ProductSection />
             </Main>
-            <Footer/>
+            <Footer />
         </HomeContent>
-    )
-}
+    );
+};
 
-export default Home;
+export default React.memo(Home);

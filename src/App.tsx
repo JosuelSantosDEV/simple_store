@@ -4,18 +4,22 @@ import { GlobalStyles } from "./styles/GlobalStyles"
 import { AppRoutes } from "./routes"
 import { BrowserRouter } from "react-router-dom"
 import { CartProvider } from "./context/CartContext"
+import { Provider } from "react-redux"
+import store from "./store"
 
 
 function App() {
  
   return (
     <BrowserRouter>
-      <CartProvider>
-        <ThemeProvider theme={lightTheme}>
-          <GlobalStyles/>
-          <AppRoutes/>
-        </ThemeProvider>
-      </CartProvider>
+      <Provider store={store}>
+        <CartProvider>
+          <ThemeProvider theme={lightTheme}>
+            <GlobalStyles/>
+            <AppRoutes/>
+          </ThemeProvider>
+        </CartProvider>
+      </Provider>
     </BrowserRouter>
   )
 }
