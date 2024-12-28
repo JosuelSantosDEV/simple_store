@@ -19,6 +19,10 @@ export const InputContent = styled.div`
         font-family: ${props => props.theme.fonts.montserratMedium};
         color: ${props => props.theme.colors.darkPrimary};
         background-color: ${props => props.theme.colors.orangeSecondary};
+
+        &:hover {
+            background-color: ${props => props.theme.colors.orangePrimary};
+        }
     }
 
 `;
